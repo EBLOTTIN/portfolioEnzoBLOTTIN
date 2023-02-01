@@ -1,11 +1,13 @@
 import "./Home.css";
-import bureau from "../../assets/bureau.jpg";
 
 const Home = () => {
   return (
     <div>
       <div className="fondHome">
-        <img className="bureau" src={bureau} alt="bureau" />
+        <div className="bureau">
+          <h1 className="textImage">Enzo BLOTTIN</h1>
+          <h1 className="texteImage">Développeur WEB</h1>
+        </div>
       </div>
     </div>
   );
