@@ -1,0 +1,17 @@
+.category {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 30px;
+  color: rgb(232, 228, 225);
+}
+
+.allCategory {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  background-color: rgb(38, 37, 36);
+  box-sizing: border-box;
+  height: 100px;
+}
