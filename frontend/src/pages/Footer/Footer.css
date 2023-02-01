@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(38, 37, 36);
+  color: rgb(232, 228, 225);
+  height: 4em;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 20em;
+  padding-top: 0.5em;
+  padding-left: 8em;
+}
+
+.github {
+  width: 80%;
+  height: 80%;
+}
+
+.linkedin {
+  width: 40%;
+  height: 40%;
+}
