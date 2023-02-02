@@ -36,7 +36,7 @@ INSERT INTO
 VALUES
   (
     'projet1.png',
-    '/public/assets/images/projet1.png'
+    '/assets/images/projet1.png'
   );
 
 INSERT INTO
@@ -44,7 +44,7 @@ INSERT INTO
 VALUES
   (
     'projet2.png',
-    '/public/assets/images/projet2.png'
+    '/assets/images/projet2.png'
   );
 
 INSERT INTO
@@ -52,7 +52,7 @@ INSERT INTO
 VALUES
   (
     'projet3.png',
-    '/public/assets/images/projet3.png'
+    '/assets/images/projet3.png'
   );
 
 INSERT INTO
