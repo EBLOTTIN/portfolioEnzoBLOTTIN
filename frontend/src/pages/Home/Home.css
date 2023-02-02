@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   background-image: url("../../assets/bureau.jpeg");
+  opacity: 70%;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;

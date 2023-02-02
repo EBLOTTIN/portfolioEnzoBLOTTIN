@@ -16,6 +16,10 @@
   display: none;
 }
 
+.photoImage {
+  border-radius: 50px;
+}
+
 .category2 {
   display: flex;
   justify-content: space-around;
