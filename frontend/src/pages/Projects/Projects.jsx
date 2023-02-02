@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Projects.css";
 
-const Projects = () => {
+const Projects = (id) => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
@@ -17,13 +18,16 @@ const Projects = () => {
   }, []);
   return (
     <div className="pagePorject">
+      <h1 className="titreProjet">My Projects</h1>
       <div className="contenuProjet">
         {images.map((i) => (
-          <img
-            src={`${import.meta.env.VITE_BACKEND_URL}${i.chemin}`}
-            className="imageProjet"
-            alt="imageProjet"
-          />
+          <Link to={`/projet/${id}`}>
+            <img
+              src={`${import.meta.env.VITE_BACKEND_URL}${i.chemin}`}
+              className="imageProjet"
+              alt="imageProjet"
+            />
+          </Link>
         ))}
       </div>
     </div>

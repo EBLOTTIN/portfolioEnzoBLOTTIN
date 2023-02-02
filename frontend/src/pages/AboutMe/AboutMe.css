@@ -5,7 +5,6 @@
 
 .chapeau {
   display: flex;
-  padding-left: 50em;
   padding-top: 2em;
   width: 50%;
   height: 50%;
@@ -19,10 +18,7 @@
 }
 
 .textPresentation {
-  padding-top: 1.5em;
-  font-size: 1.5em;
-  font-weight: 500;
-  width: 800px;
+  font-size: 1em;
 }
 
 .textLanguage {
@@ -31,4 +27,17 @@
   text-align: center;
   padding-top: 3em;
   font-size: 1.8em;
+}
+
+@media screen and (min-width: 769px) {
+  .textPresentation {
+    font-size: 1.5em;
+  }
+  .chapeau {
+    display: flex;
+    padding-left: 50em;
+    padding-top: 2em;
+    width: 50%;
+    height: 50%;
+  }
 }

@@ -1,4 +1,6 @@
 import "./Home.css";
+import AboutMe from "../AboutMe/AboutMe";
+import Projects from "../Projects/Projects";
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
           <h1 className="texteImage">Web Developer</h1>
         </div>
       </div>
+      <AboutMe />
+      <Projects />
     </div>
   );
 };
