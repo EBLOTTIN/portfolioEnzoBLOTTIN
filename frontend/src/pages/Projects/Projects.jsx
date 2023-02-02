@@ -1,27 +1,15 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Projects.css";
 
 const Projects = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    const imageReferences = [
-      "/assets/images/projet1.png",
-      "/assets/images/projet2.png",
-      "/assets/images/projet3.png",
-      "/assets/images/hackathon2.png",
-    ];
-    Promise.all(
-      imageReferences.map(async (imageReferences) => {
-        const response = await axios.get(
-          `${import.meta.env.VITE_BACKEND_URL}${imageReferences}`
-        );
-        return response.data;
-      })
-    )
-      .then((images) => {
-        setImages(images);
+    axios
+      .get(`${import.meta.env.VITE_BACKEND_URL}/images`)
+      .then(({ data }) => {
+        setImages(data);
       })
       .catch((err) => {
         console.error(err);
@@ -29,15 +17,14 @@ const Projects = () => {
   }, []);
   return (
     <div className="pagePorject">
-      <div className="projects">
-        {images.map((image, index) => {
+      <div className="contenuProjet">
+        {images.map((i) => (
           <img
+            src={`${import.meta.env.VITE_BACKEND_URL}${i.chemin}`}
             className="imageProjet"
-            key={index}
-            src={image}
-            alt="porjectImage"
-          />;
-        })}
+            alt="imageProjet"
+          />
+        ))}
       </div>
     </div>
   );

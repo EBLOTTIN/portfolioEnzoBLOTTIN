@@ -2,7 +2,7 @@ const AbstractManager = require("./AbstractManager");
 
 class ImageManager extends AbstractManager {
   constructor() {
-    super({ table: "users" });
+    super({ table: "images" });
   }
 
   insert(image) {

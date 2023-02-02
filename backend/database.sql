@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS images (
   chemin VARCHAR(255),
   taille VARCHAR(255),
   name VARCHAR(50) NOT NULL
-);
+) ENGINE = InnoDB AUTO_INCREMENT = 4 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 
 CREATE TABLE IF NOT EXISTS project (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS project (
   lien VARCHAR(255),
   imageID INT,
   FOREIGN KEY (imageID) REFERENCES images(id)
-);
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 
 CREATE TABLE IF NOT EXISTS pageProjet (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS pageProjet (
   lien VARCHAR(255),
   imageID INT,
   FOREIGN KEY (imageID) REFERENCES images(id)
-);
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 
 CREATE TABLE IF NOT EXISTS pages (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -29,36 +29,36 @@ CREATE TABLE IF NOT EXISTS pages (
   contenu VARCHAR(255) NOT NULL,
   imageID INT,
   FOREIGN KEY (imageID) REFERENCES images(id)
-);
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 
 INSERT INTO
   images (name, chemin)
 VALUES
   (
-    'projet1.png',
-    '/assets/images/projet1.png'
+    "projet1.png",
+    "/assets/images/projet1.png"
   );
 
 INSERT INTO
   images (name, chemin)
 VALUES
   (
-    'projet2.png',
-    '/assets/images/projet2.png'
+    "projet2.png",
+    "/assets/images/projet2.png"
   );
 
 INSERT INTO
   images(name, chemin)
 VALUES
   (
-    'projet3.png',
-    '/assets/images/projet3.png'
+    "projet3.png",
+    "/assets/images/projet3.png"
   );
 
 INSERT INTO
   images (name, chemin)
 VALUES
   (
-    'hackathon2.png',
-    '/assets/images/hackathon2.png'
+    "hackathon2.png",
+    "/assets/images/hackathon2.png"
   );
