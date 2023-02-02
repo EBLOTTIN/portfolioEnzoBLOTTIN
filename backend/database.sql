@@ -60,5 +60,5 @@ INSERT INTO
 VALUES
   (
     'hackathon2.png',
-    '/public/assets/images/hackathon2.png'
+    '/assets/images/hackathon2.png'
   );

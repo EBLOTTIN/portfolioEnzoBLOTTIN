@@ -18,6 +18,7 @@ const AboutMe = () => {
         <p className="textLanguage">
           Here are the different languages I learned.
         </p>
+        <div className="caroussel3d"></div>
       </div>
     </div>
   );
