@@ -1,6 +1,7 @@
 import "./Home.css";
 import AboutMe from "../AboutMe/AboutMe";
 import Projects from "../Projects/Projects";
+import Carousel from "../Carrousse3D/Carroussel3D";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         </div>
       </div>
       <AboutMe />
+      <Carousel />
       <Projects />
     </div>
   );
