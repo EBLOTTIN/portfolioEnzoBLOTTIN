@@ -14,12 +14,13 @@
 }
 
 .imageProjet {
-  width: 40%;
+  display: flex;
+  width: 50%;
+  padding: 1.2em;
 }
 
 @media screen and (min-width: 769px) {
   .imageProjet {
-    padding: 3em;
-    width: 100%;
+    width: 20%;
   }
 }

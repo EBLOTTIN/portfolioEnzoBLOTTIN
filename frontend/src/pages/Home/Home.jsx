@@ -1,7 +1,6 @@
 import "./Home.css";
 import AboutMe from "../AboutMe/AboutMe";
 import Projects from "../Projects/Projects";
-import Carroussel3D from "../Carrousse3D/Carroussel3D";
 
 const Home = () => {
   return (
@@ -13,7 +12,6 @@ const Home = () => {
         </div>
       </div>
       <AboutMe />
-      <Carroussel3D />
       <Projects />
     </div>
   );
