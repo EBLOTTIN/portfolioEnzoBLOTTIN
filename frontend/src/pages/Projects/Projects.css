@@ -1,0 +1,26 @@
+.contenuProjet {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.titreProjet {
+  border-bottom: 1px solid black;
+  border-width: auto;
+  width: 250px;
+  padding-top: 0.5em;
+}
+
+.imageProjet {
+  display: flex;
+  width: 50%;
+  padding: 1.2em;
+}
+
+@media screen and (min-width: 769px) {
+  .imageProjet {
+    width: 80%;
+  }
+}
