@@ -3,7 +3,7 @@ import "./Carroussel3D.css";
 
 const images = ["css.png", "HTML5.png", "js.png", "node.png", "react.png"];
 
-export default function Carousel() {
+const Carousel = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -20,4 +20,6 @@ export default function Carousel() {
       ))}
     </div>
   );
-}
+};
+
+export default Carousel;

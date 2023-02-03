@@ -1,5 +1,6 @@
 import "./AboutMe.css";
 import chapeau from "../../assets/chapeaulogo.svg";
+import Carousel from "../Carrousse3D/Carroussel3D";
 
 const AboutMe = () => {
   return (
@@ -18,8 +19,8 @@ const AboutMe = () => {
         <p className="textLanguage">
           Here are the different languages I learned.
         </p>
-        <div className="caroussel3d"></div>
       </div>
+      <Carousel />
     </div>
   );
 };
