@@ -1,0 +1,22 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 25em;
+  perspective: 1000px;
+}
+
+.theCaroussel {
+  width: 40%;
+  height: 40%;
+}
+
+.carousel img {
+  height: 100%;
+  width: 20%;
+  object-fit: cover;
+  margin: 10px;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
