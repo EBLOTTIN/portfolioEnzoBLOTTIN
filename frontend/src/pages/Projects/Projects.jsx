@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Projects.css";
 
-const Projects = (id) => {
+const Projects = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
@@ -16,12 +16,18 @@ const Projects = (id) => {
         console.error(err);
       });
   }, []);
+
+  const getIdImage = (i) => {
+    const imageName = i.name.split(".")[0];
+    const idImage = imageName[imageName.length - 1];
+    return idImage;
+  };
   return (
     <div className="pagePorject">
       <h1 className="titreProjet">My Projects</h1>
       <div className="contenuProjet">
         {images.map((i) => (
-          <Link to={`/projet/${id}`}>
+          <Link to={`/projets/${getIdImage(i)}`}>
             <img
               src={`${import.meta.env.VITE_BACKEND_URL}${i.chemin}`}
               className="imageProjet"
