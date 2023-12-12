@@ -1,6 +1,5 @@
 import "./AboutMe.css";
 import chapeau from "../../assets/chapeaulogo.svg";
-import Carousel from "../Carrousse3D/Carroussel3D";
 
 const AboutMe = () => {
   return (
