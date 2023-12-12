@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <div className="aboutMe">
       <div className="textAboutMe">
-        <h2 className="titreAboutMe">About Me</h2>
+        <h2 className="titreAboutMe">About me</h2>
         <div className="presentation">
           <p className="textPresentation">
             My name is Enzo BLOTTIN, I'm 20 years old, I'm a web developer. In

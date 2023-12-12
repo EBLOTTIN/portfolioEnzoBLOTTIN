@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import "./NavBar.css";
 import enzo from "../../assets/enzo.jpeg";
 
