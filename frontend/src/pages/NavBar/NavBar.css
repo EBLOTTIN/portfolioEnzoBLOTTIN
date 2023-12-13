@@ -40,7 +40,7 @@
     display: none;
   }
   .photoImage {
-    width: 200px;
-    border-radius: 300px;
+    width: 160px;
+    border-radius: 50%;
   }
 }

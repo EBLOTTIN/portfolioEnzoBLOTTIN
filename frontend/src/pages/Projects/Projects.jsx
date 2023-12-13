@@ -24,7 +24,7 @@ const Projects = () => {
   };
   return (
     <div className="pagePorject">
-      <h1 className="titreProjet">My Projects</h1>
+      <h2 className="titreProjet">My projects</h2>
       <div className="contenuProjet">
         {images.map((i) => (
           <Link to={`/projets/${getIdImage(i)}`}>
