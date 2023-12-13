@@ -1,6 +1,4 @@
 import "./AboutMe.css";
-import chapeau from "../../assets/chapeaulogo.svg";
-
 const AboutMe = () => {
   return (
     <div className="aboutMe">
@@ -13,13 +11,11 @@ const AboutMe = () => {
             before integrating the wild code school to learn the job of Web
             developer for 5 months.
           </p>
-          <img className="chapeau" src={chapeau} alt="etude" />
         </div>
         <p className="textLanguage">
           Here are the different languages I learned.
         </p>
       </div>
-      <Carousel />
     </div>
   );
 };
