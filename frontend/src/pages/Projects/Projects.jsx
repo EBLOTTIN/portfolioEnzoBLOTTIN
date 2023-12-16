@@ -32,7 +32,7 @@ const Projects = () => {
               src={`${import.meta.env.VITE_BACKEND_URL}${i.chemin}`}
               className="imageProjet"
               alt="imageProjet"
-            />
+            /> 
           </Link>
         ))}
       </div>
