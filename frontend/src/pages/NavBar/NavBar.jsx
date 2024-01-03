@@ -1,23 +1,31 @@
+import React, { useState } from 'react';
+import enzo from '../../assets/enzo.jpeg'; 
+import burgerMenu from '../../assets/burgerMenu.png';
 import "./NavBar.css";
-import enzo from "../../assets/enzo.jpeg";
 
-const NavBar = () => {
+const BurgerMenu = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header className="allCategory">
-      <div className="category1">
-        <h1 className="category">Home</h1>
-        <h1 className="category">About me</h1>
-        <h1 className="category">My Projects</h1>
-        <img className="photoImage" src={enzo} alt="Ma Photo" />
-      </div>
-      <div className="category2">
-        <h1 className="category">Home</h1>
-        <h1 className="category">About me</h1>
-        <h1 className="category">My Projects</h1>
-        <img className="photoImage" src={enzo} alt="Ma Photo" />
-      </div>
+    <header className={`allCategory ${isMenuOpen ? 'menuOpen' : ''}`}>
+      <img className="photoImage" src={enzo} alt="Ma Photo" />
+      <ul className={`category1 ${isMenuOpen ? 'menuOpen' : ''}`}>
+        <li className="category">Home</li>
+        <li className="category">About me</li>
+        <li className="category">My Projects</li>
+      </ul>
+      <img
+        src={burgerMenu}
+        alt="menu_button"
+        className="burgerMenuImage"
+        onClick={toggleMenu}
+      />
     </header>
   );
 };
 
-export default NavBar;
+export default BurgerMenu;
