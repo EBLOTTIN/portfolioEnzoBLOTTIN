@@ -1,46 +1,73 @@
-.category {
+.allCategory {
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-left: 30px;
-  color: rgb(232, 228, 225);
-}
-
-.category1 {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  text-align: center;
-  background-color: rgb(38, 37, 36);
-  box-sizing: border-box;
-  display: none;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #333;
+  color: white;
 }
 
 .photoImage {
-  border-radius: 100px;
-  width: 20%;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
 }
 
-.category2 {
+.category1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  text-align: center;
-  background-color: rgb(38, 37, 36);
-  box-sizing: border-box;
-  height: 150px;
 }
 
-@media screen and (min-width: 769px) {
+.category {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.burgerMenuImage {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+  /* Masque le bouton burger sur les écrans larges */
+}
+
+/* Media query pour afficher le bouton burger sur les écrans étroits */
+@media (max-width: 768px) {
+  .burgerMenuImage {
+    display: block;
+  }
+
   .category1 {
-    display: flex;
-    height: 150px;
-  }
-  .category2 {
     display: none;
+    /* Masque la liste de catégories sur les écrans étroits */
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
   }
-  .photoImage {
-    width: 160px;
-    border-radius: 50%;
+
+  .category {
+    margin: 10px;
+    font-size: 2em;
+  }
+
+  /* Affiche la liste de catégories lorsqu'on clique sur le bouton burger */
+  .category1.menuOpen {
+    display: flex;
+  }
+
+  /* Ajoute un effet de fondu lors de l'ouverture du menu burger */
+  .category1 {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .category1.menuOpen {
+    opacity: 1;
   }
 }
