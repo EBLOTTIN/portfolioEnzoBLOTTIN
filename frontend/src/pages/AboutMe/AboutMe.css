@@ -1,17 +1,15 @@
+.aboutMe{
+    color: #202020;
+}
+
 .presentation {
   display: flex;
   flex-direction: row;
 }
 
-.chapeau {
-  display: flex;
-  padding-top: 2em;
-  width: 50%;
-  height: 50%;
-}
 
 .titreAboutMe {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #BBBBBB;
   border-width: auto;
   width: 150px;
   padding-top: 0.5em;
