@@ -3,14 +3,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-  background-color: #333;
-  color: white;
-}
-
-.photoImage {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
+  background-color: #FCFCFC;
+  color: #202020;
+  justify-content: flex-end;
 }
 
 .category1 {

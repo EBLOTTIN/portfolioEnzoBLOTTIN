@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import enzo from '../../assets/enzo.jpeg'; 
 import burgerMenu from '../../assets/burgerMenu.png';
 import "./NavBar.css";
 
@@ -12,7 +11,6 @@ const BurgerMenu = () => {
 
   return (
     <header className={`allCategory ${isMenuOpen ? 'menuOpen' : ''}`}>
-      <img className="photoImage" src={enzo} alt="Ma Photo" />
       <ul className={`category1 ${isMenuOpen ? 'menuOpen' : ''}`}>
         <li className="category">Home</li>
         <li className="category">About me</li>
